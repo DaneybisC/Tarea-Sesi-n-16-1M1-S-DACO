@@ -1,13 +1,15 @@
 import java.util.Scanner;
 
 public class App {
+    //Nombre:Daneybis Anahelly Calero Ochoa.  No. de carnet:2024-1350U
+
     //Definir variables
     public static int num1;
     public static int num2;
     public static int num3;
     
     //Se utilizaron estos métodos para realizar las operaciones.
-    //de la suma y las diferencias de los números menores  mayores.
+    //de la suma y las diferencias de los números menores y mayores.
     public static int sumar(int minimo1,int minimo2){
         int resultado = minimo1 + minimo2;
         return resultado;
@@ -33,11 +35,10 @@ public class App {
         return resultado2;
     }
 
-    public static int sumar2(int minimo2,int minimo1){
-        int resultado = minimo1 + minimo2;
+    public static int sumar2(int minimo1,int minimo3){
+        int resultado = minimo3 + minimo1;
         return resultado;
     }
-
 
     public static void main(String[] args) throws Exception {
         //Se utilizo Scanner para leer los 3 números.
@@ -79,7 +80,7 @@ public class App {
             } else {
                 if (maximo1 == maximo3) {
                     System.out.println("El número mayor es: "+maximo3);
-                System.out.println("La suma de los números más pequeños es: "+sumar(minimo1, minimo2));
+                System.out.println("La suma de los números más pequeños es: "+sumar2(minimo1, minimo3));
                 System.out.println("La diferencia de los números mayores es de: "+resta2(maximo2, maximo1));
                 }
             }
